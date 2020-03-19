@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body{
+    background: #e3f6f5;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+    width: 100%;
+}
+
+header{
+    background: #272343;
+    padding: 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #bae8e8;
+}
+section{
+    width: 80%;
+    margin: 0 auto 150px auto;
+    height: 100%;
+}
+
+section img{
+    width: 100%;
+}
+section .object-img{
+    width: 150px;
+}
+
+button{
+    background: #ffd803;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background: #ffe031;
+}
+
+#tips{
+    display: none;
+}
+#tips2{
+    display: none;
+}
+footer{
+    text-align: center;
+    background: #272343;
+    padding: 35px;
+    color: #bae8e8;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+#products_list{
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+
+}
+.card{
+    border: 1px solid black;
+    width:250px;
+    background:white;
+    margin: 0px 10px;
+    position: relative;
+    
+}
+.card h1{
+    margin:0;
+    text-transform: capitalize;
+}
+.img-card{
+    height: 200px;
+}
+.content-card{
+    padding: 0 15px 15px 15px;
+}
+.card img{
+    width: 100%;
+    padding: 15px 15px 0 15px;
+    box-sizing: border-box;
+}
+.card span{
+position: absolute;
+top: -15px;
+right: -15px;
+padding: 5px;
+background: red;
+height: 40px;
+width: 40px;
+border-radius: 50%;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+}

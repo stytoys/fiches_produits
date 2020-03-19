@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Boutique en ligne</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        EXERCICE JAVASCRIPT #3
+    </header>
+    <section>
+        <h1>Boutique E-commerce: ma page produit</h1>
+        <p>
+            Consigne: Créer une page produit dynamique:
+        </p>
+        <p>Vos produits doivent ressembler par exemple à ça:</p>
+        <img src="./img/Fiches produits.PNG" alt="">
+
+        <p>Les images des chaussures sont dans le dossier img si vous voulez. De même que le style CSS, vous pouvez le
+            reprendre en vous fiant aux noms des classes notées dans le fichier style.css .</p>
+
+            <!-- VOS FICHES PRODUITS DOIVENT APPARAITRE A PARTIR D'ICI -->
+        <div id="products_list">
+            <!--
+            <div class="card">
+                <img src="${product.image}" class="img-card">
+                <div class="content-card">
+                    <span>${product.price}</span>
+                    <h1>${product.name}</h1>
+                    <p>
+                        ${product.color}<br>
+                        ${product.size}
+                    </p>
+                </div>
+            </div>
+            -->
+        </div>
+
+        <div>
+            <h2>ASTUCES</h2>
+            <button onclick=displayTips()>CLIQUEZ ICI POUR AVOIR DE L'AIDE</button>
+            <div id="tips">
+
+                <ul>
+                    <li>Vous devez commencer par faire un tableau d'objets</li>
+                    <li>Le gestionnaire d'évènement <a target="_blank"
+                            href="https://www.w3schools.com/jsref/event_onload.asp">onload</a>
+                    </li>
+                    <li>Vous devez faire une boucle pour chaque élément du tableau</li>
+                </ul>
+                <button onclick=displayTips2()>CLIQUEZ ICI POUR ENCORE PLUS DE CONSEILS</button>
+            </div>
+            <div id="tips2">
+
+                <ul>
+                    <li>un tableau d'objet se présente comme suit: <ul>
+                            <!--<li><img src="../corrections/exercice 3/objet-img.PNG" class="object-img"></li>-->
+                        </ul>
+                    </li>
+                    <li>Pensez à bien utiliser les index du tableau pour sélectionner chaque élément du tableau
+                    </li>
+                    <li>Quand vous injectez du HTML dans une balise, vous devez utiliser les <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">Backtick ou Template String</a> pour mettre les différentes variables</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        Fait avec ❤️ & 🩸- ARINFO | I-Maginer - 2020
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const displayTips = () => {
+            document.getElementById('tips').style.display = 'block'
+        }
+        const displayTips2 = () => {
+            document.getElementById('tips2').style.display = 'block'
+        }
+    </script>
+</body>
+
+</html>
